@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Base font size for mobile devices */
+html {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Increase base font size for larger devices */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #4a90e2; /* Primary blue */
+    --secondary-color: #f4f4f4; /* Light grey for backgrounds */
+    --text-color: #333; /* Dark grey for text */
+    --accent-color: #e74c3c; /* Red for accents */
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+
+/* Buttons and Forms */
+.btn, .form-control, .form-check-input {
+    border-radius: 0.25rem; /* Rounded edges for modern look */
+}
+
+    .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+        box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.5); /* Focus shadow using primary color */
+    }
+
+/* Header and Footer */
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+
+/* Links */
+a {
+    color: var(--primary-color);
+}
+
+    a:hover {
+        color: var(--accent-color);
+    }
+
+
+/* Navbar customizations */
+.navbar {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+/* Ensure Annapurna font is used where specified */
+.special-font {
+    font-family: 'Annapurna SIL', serif;
+}
